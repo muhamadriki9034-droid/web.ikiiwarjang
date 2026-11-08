@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warjang Hihu | Warung Mang Ujang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a class="logo" href="#beranda">
+            😸 <span>warjang<span class="accent">hihu</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#menu">Menu</a>
+            <a href="#wifi">Rental WiFi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <button class="cart-button" id="openCart">
+            🛒 Pesanan <b id="cartCount">0</b>
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- BERANDA -->
+        <section class="hero" id="beranda">
+
+            <div>
+                <p class="eyebrow">
+                    JAJAN ENAK • INTERNET NYAMAN
+                </p>
+
+                <h1>
+                    WARJANG<br>
+                    <span>Warung Mang Ujang</span>
+                </h1>
+
+                <p class="hero-desc">
+                    Tempat nongkrong santai, jajanan lezat,
+                    dan WiFi untuk menemani aktivitasmu.
+                </p>
+
+                <a class="btn" href="#menu">
+                    Lihat Menu
+                </a>
+
+                <a class="btn outline" href="#tentang">
+                    Tentang Kami
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <span>🍟</span>
+                <span>📶</span>
+                <span>🥤</span>
+                <small>JAJAN • NGOPI • ONLINE</small>
+            </div>
+
+        </section>
+
+
+        <!-- TENTANG -->
+        <section class="section about" id="tentang">
+
+            <p class="eyebrow">KENALI KAMI</p>
+            <h2>Tentang Kami</h2>
+
+            <p>
+                Warung Mang Ujang atau Warjang adalah warung
+                jajanan dan rental WiFi yang menyediakan
+                camilan enak dengan harga terjangkau serta
+                akses internet untuk belajar, bermain,
+                dan bersantai.
+            </p>
+
+            <div class="hours">
+                🕒 Jam Buka
+                <strong>05.00 – 23.00 WIB</strong>
+            </div>
+
+        </section>
+
+
+        <!-- MENU JAJANAN -->
+        <section class="section menu-section" id="menu">
+
+            <p class="eyebrow">PILIH FAVORITMU</p>
+            <h2>Menu Jajanan</h2>
+
+            <p class="hint">
+                Pilih produk, tambahkan ke keranjang,
+                lalu checkout.
+            </p>
+
+            <div class="cards">
+
+                <!-- KOPI -->
+                <article class="card">
+                    <div class="food-image">
+                        <img src="assets/kopi.jpg" alt="Kopi"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                        <span>☕</span>
+                    </div>
+
+                    <h3>Kopi</h3>
+                    <p>Kopi membuatmu tetap melek.</p>
+                    <strong class="price">Rp4.000</strong>
+
+                    <button class="add-cart"
+                        data-name="Kopi"
+                        data-price="4000">
+                        + Tambah ke Keranjang
+                    </button>
+                </article>
+
+
+                <!-- MIE GORENG -->
+                <article class="card">
+                    <div class="food-image">
+                        <img src="assets/miegoreng.jpg" alt="Mie Goreng"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                        <span>🍜</span>
+                    </div>
+
+                    <h3>Mie Goreng/rebus</h3>
+                    <p>Cocok buat yang lapar ketika kalian mabar.</p>
+                    <strong class="price">Rp5.000</strong>
+
+                    <button class="add-cart"
+                        data-name="Mie Goreng"
+                        data-price="5000">
+                        + Tambah ke Keranjang
+                    </button>
+                </article>
+
+
+                <!-- MINUMAN -->
+                <article class="card">
+                    <div class="food-image">
+                        <img src="assets/minumangelas.jpg" alt="Minuman Gelas"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                        <span>🥤</span>
+                    </div>
+
+                    <h3>Minuman Gelas</h3>
+                    <p>Minuman segar pelepas dahaga.</p>
+                    <strong class="price">Rp1.000</strong>
+
+                    <button class="add-cart"
+                        data-name="Minuman Gelas"
+                        data-price="1000">
+                        + Tambah ke Keranjang
+                    </button>
+                </article>
+
+
+                <!-- GAS -->
+                <article class="card">
+                    <div class="food-image">
+                        <img src="assets/gas.jpg" alt="Gas 3Kg"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                        <span>🔥</span>
+                    </div>
+
+                    <h3>Gas 3Kg</h3>
+                    <p>Gas untuk kebutuhan rumah tangga.</p>
+                    <strong class="price">Rp23.000</strong>
+
+                    <button class="add-cart"
+                        data-name="Gas 3Kg"
+                        data-price="23000">
+                        + Tambah ke Keranjang
+                    </button>
+                </article>
+
+
+                <!-- GALON -->
+                <article class="card">
+                    <div class="food-image">
+                        <img src="assets/galon.jpg" alt="Galon Isi Ulang"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                        <span>💧</span>
+                    </div>
+
+                    <h3>Galon Isi Ulang</h3>
+                    <p>Isi ulang galon dengan harga terjangkau.</p>
+                    <strong class="price">Rp4.000</strong>
+
+                    <button class="add-cart"
+                        data-name="Galon isi ulang"
+                        data-price="4000">
+                        + Tambah ke Keranjang
+                    </button>
+                </article>
+
+
+                <!-- SNACK -->
+<article class="card">
+    <div class="food-image">
+        <img src="assets/snack.jpg" alt="Snack"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span>🍟</span>
+    </div>
+
+    <h3>Snack</h3>
+    <p>Camilan enak buat menemani kalian main game.</p>
+    <strong class="price">Rp2.000</strong>
+
+    <button class="add-cart"
+        data-name="Snack"
+        data-price="5000">
+        + Tambah ke Keranjang
+    </button>
+</article>
+
+            </div>
+        </section>
+
+
+        <!-- RENTAL WIFI -->
+        <section class="section wifi-section" id="wifi">
+
+            <p class="eyebrow">INTERNET LEBIH HEMAT</p>
+            <h2>Paket Rental WiFi</h2>
+
+            <div class="wifi-card">
+
+                <div>
+                    <span class="wifi-icon">📶</span>
+                    <h3>Rental WiFi</h3>
+                    <p>Akses internet untuk kebutuhan harian.</p>
+                </div>
+
+                <div class="packages">
+
+                    <article>
+                        <span>1 Jam</span>
+                        <strong>Rp3.000</strong>
+                        <button class="add-cart"
+                            data-name="Rental WiFi 1 Jam"
+                            data-price="3000">
+                            Tambah
+                        </button>
+                    </article>
+
+                    <article>
+                        <span>3 Jam</span>
+                        <strong>Rp7.000</strong>
+                        <button class="add-cart"
+                            data-name="Rental WiFi 3 Jam"
+                            data-price="7000">
+                            Tambah
+                        </button>
+                    </article>
+
+                    <article>
+                        <span>Seharian</span>
+                        <strong>Rp15.000</strong>
+                        <button class="add-cart"
+                            data-name="Rental WiFi Seharian"
+                            data-price="15000">
+                            Tambah
+                        </button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- KONTAK -->
+        <section class="section contact" id="kontak">
+
+            <p class="eyebrow">KAMI SIAP MELAYANI</p>
+            <h2>Kontak & Lokasi</h2>
+
+            <p>📍 Lokasi: Sodong RT 02/01</p>
+            <p>🕒 Buka setiap hari: 05.00 – 23.00 WIB</p>
+            <p>📱 WhatsApp: 085794594558</p>
+
+            <a class="btn"
+                href="https://wa.me/6285794594558"
+                target="_blank"
+                rel="noopener">
+                Hubungi WhatsApp ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>😸 WARJANG HIHU</strong>
+        <p>Warung Mang Ujang • Jajan enak, internet nyaman.</p>
+    </footer>
+
+
+    <!-- KERANJANG -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">PESANAN KAMU</p>
+                <h2>Keranjang</h2>
+            </div>
+
+            <button class="close-button" id="closeCart">
+                ✕
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Keranjang masih kosong.</p>
+        </div>
+
+        <div class="cart-bottom">
+            <div class="total-line">
+                <span>Total pesanan</span>
+                <strong id="cartTotal">Rp0</strong>
+            </div>
+
+            <button class="checkout-button"
+                id="checkoutButton"
+                disabled>
+                Checkout via WhatsApp
+            </button>
+        </div>
+
+    </aside>
+
+
+    <!-- FORM CHECKOUT -->
+    <div class="checkout-modal" id="checkoutModal">
+
+        <div class="checkout-box">
+
+            <button class="close-button modal-close"
+                id="closeCheckout">
+                ✕
+            </button>
+
+            <p class="eyebrow">LENGKAPI PESANAN</p>
+            <h2>Checkout</h2>
+
+            <form id="checkoutForm">
+
+                <label>
+                    Nama pemesan
+                    <input
+                        name="customerName"
+                        required
+                        placeholder="Masukkan nama kamu">
+                </label>
+
+                <label>
+                    Catatan / alamat (opsional)
+                    <textarea
+                        name="customerNote"
+                        rows="3"
+                        placeholder="Contoh: diambil langsung atau alamat pengantaran"></textarea>
+                </label>
+
+                <div class="total-line">
+                    <span>Total pembayaran</span>
+                    <strong id="checkoutTotal">Rp0</strong>
+                </div>
+
+                <button class="checkout-button" type="submit">
+                    Kirim Pesanan ke WhatsApp
+                </button>
+
+            </form>
+
+            <p class="fine-print">
+                WhatsApp akan terbuka dengan rincian pesanan
+                untuk dikonfirmasi penjual.
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- NOTIFIKASI -->
+    <div class="toast" id="toast"></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
